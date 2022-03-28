@@ -1,3 +1,20 @@
 .header{
-    background-color: red;
+    display: flex;
+    align-items: center;
+    /* this adds equal spacing between all children the header
+    right now we have two the profile icon and the tinder logo*/
+    justify-content: space-between;
+    /* this is used to keep the header on top at all times */
+    z-index: 100;
+    /* and finally we can add a bottom border */
+    border-bottom: 1px solid gray;
+}
+
+.header__logo{
+    object-fit: contain;
+    height: 40px;
+}
+
+.header__icon{
+    padding: 20px;
 }
