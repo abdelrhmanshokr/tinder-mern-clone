@@ -3,7 +3,7 @@ import Card from '../models/cards.js';
 const get_all_cards =  async(req, res) => {
     try{
         const allCards = await Card.find();
-
+        
         return res.status(200).send(allCards);
     }catch(err){
         return res.status(404).json(err.message);
